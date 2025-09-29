@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+}
+
+/* Main Container */
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+/* Page 1 Styling */
+#page1 {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Screenshot\ 2024-12-01\ 131918.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+#nav {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 4vw;
+}
+
+.np1 h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.np1 h1 span {
+    font-size: 2.5vw;
+    font-weight: 100;
+}
+
+.np2 {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1.5vw;
+}
+
+.np2 button {
+    padding: 12px 20px;
+    font-size: 1.3vw;
+    border: 2px solid lightgray;
+    border-radius: 35px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.np2 button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    overflow: hidden;
+}
+
+.icon i {
+    color: white;
+    font-size: 2vw;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.ri-menu-fill {
+    display: none;
+}
+
+.icon:hover .ri-menu-3-line {
+    display: none;
+}
+
+.icon:hover .ri-menu-fill {
+    display: block;
+    background-color: #4f4e4e37;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Center Section */
+#centrdiv {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw; /* Prevent overflow */
+}
+
+#centerleft {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+#centerleft h1 {
+    letter-spacing: -5px;
+    font-family: sans-serif;
+    line-height: 5.5vw;
+    font-size: 7vw;
+}
+
+#centerleft p {
+    margin-top: 6vh;
+    font-size: 1.2vw;
+}
+
+#centerleft h3 {
+    position: absolute;
+    rotate: 90deg;
+    bottom: 7vw;
+    left: 1rem; /* Adjusted to prevent overflow */
+}
+
+.centerright {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerright i {
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Page 2 Styling */
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    /* background-color:; */
+    border: 2px solid greenyellow;
+}
